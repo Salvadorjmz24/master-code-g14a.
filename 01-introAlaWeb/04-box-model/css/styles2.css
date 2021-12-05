@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: rgb(70, 104, 167);
+    height: 50px;
+}
+aside{
+    background-color: rgb(158, 28, 28);
+    float: right;
+    height: 50px;
+    width: 20%;
+}
+main{
+    background-color: rgb(217, 231, 18);
+    float: right;
+    height: 50px;
+    width: 80%;
+
+}
+footer{
+    background-color: rgb(90, 18, 126);
+    bottom: 0;
+    height: 50px;
+    position: fixed;
+    
+}
