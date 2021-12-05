@@ -3,25 +3,25 @@ body{
 }
 header{
     background-color: rgb(70, 104, 167);
-    height: 50px;
+    height: 10vh;
 }
 aside{
     background-color: rgb(158, 28, 28);
-    float: right;
-    height: 50px;
+    float: left;
+    height: 80vh;
     width: 20%;
 }
 main{
     background-color: rgb(217, 231, 18);
     float: right;
-    height: 50px;
+    height:80vh;
     width: 80%;
 
 }
 footer{
     background-color: rgb(90, 18, 126);
     bottom: 0;
-    height: 50px;
+    height: 10vh;
     position: fixed;
-    
+    width: 100%;
 }
