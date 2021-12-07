@@ -1,0 +1,38 @@
+body{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header{
+    background-color: rgba(11, 11, 201, 0.945);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+h1,nav{
+    display: inline-block;
+}
+h1,nav a{
+    color: #ffffff;
+}
+h1{ 
+    font-size: 1.2rem;
+    margin: 0; 
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+nav a{
+    font-size: 0.6rem;
+    text-decoration: none;
+    padding: 10px 5px;
+
+}
+nav a:hover{
+    background-color: blue;
+
+}
+
