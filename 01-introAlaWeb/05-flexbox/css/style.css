@@ -59,20 +59,29 @@ aside a{
     width: 100% ;    
 }
 aside a:hover{
-    background-color: darkred;
+    background-color: rgb(11, 118, 189);
 }
 section{
-    background-color: crimson;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-flow: row wrap;
     width: 90%;
+}
+article{
+    flex: 1 1 30%;
+    text-align: center;
 }
 img{
     height: 100px;
+
 }
 footer{
-    
-    background-color: darkgreen;
+    align-items: center;
+    background-color: rgb(17, 7, 160);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     height: 10vh;
-
     width: 100%;
 }
 p,footer a{
@@ -86,4 +95,3 @@ p{
 .marginIzq{
     margin-left: 5px;
 }
-
