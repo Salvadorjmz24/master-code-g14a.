@@ -51,6 +51,13 @@ nav a{
 nav a:hover{
     background-color: rgb(219, 168, 228);
 }
+section{
+    display: flex;
+    flex-flow: row wrap;
+}
+article{
+    flex: 1 1 15%;
+}
 /*media queries (responsive desing)*/
 @media screen and (min-width:780px) and (max-width:1024px) {
     .encabezado{
@@ -73,7 +80,7 @@ nav a:hover{
         height: 80px;
     }
     .contenido{
-        background-color: rgb(194, 10, 10);
+        background-color: rgb(0, 0, 0);
     }
     .contenido_lateral{
         width: 100%;
