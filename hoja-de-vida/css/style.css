@@ -18,7 +18,7 @@ h1,nav a{
     color: #ffffff;
 }
 h1{ 
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin: 0; 
 }
 nav{
@@ -28,29 +28,25 @@ nav{
     width: 20%;
 }
 nav a{
-    font-size: 0.6rem;
+    font-size: 2rem;
     text-decoration: none;
-    padding: 10px 5px;
+    padding: 5px 5px;
 
 }
 nav a:hover{
     background-color: blue;
-}
-main{
-    display: flex;
-    flex-direction: row;
 }
 aside{
     align-items: center;
     background-color: rgba(3, 34, 94, 0.918);
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 20%;
 }
 aside a{
     color: #ffffff;
     font-style: oblique;
-    font-size: 0.8rem;
+    font-size: 2rem;
     padding: 5px 0;
     text-align: center;
     text-decoration: none;
@@ -58,17 +54,12 @@ aside a{
 aside a:hover{
         background-color: rgb(0, 0, 0);
     }
-section{
-        background-color: rgb(15, 146, 207);
-        display: flex;
-        flex-flow: row wrap;
-        width: 90%;
-    }
-article{
-        flex: 1 1 30%;
-        text-align: end;
-        
-    }
+aside, li{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: blanchedalmond;
+}
 img{
         height: 100px;
     }
@@ -84,7 +75,7 @@ footer{
 p,footer a{
         color: #ffffff;
         font-style: oblique;
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
 p{
         display: inline;
