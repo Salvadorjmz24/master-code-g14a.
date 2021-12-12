@@ -18,6 +18,10 @@ h1,a{
     color: rgb(48, 39, 39);
     text-decoration: none;
     font-size: 1.3rem;
+    padding: 10px 10px;
+}
+h1 a:hover{
+    background-color: rgb(238, 103, 103);
 }
 h1 a:nth-child(1){
     color: #fd2b2b;
@@ -45,18 +49,21 @@ nav{
 nav a{
     font-size: 1.5rem;
     text-decoration: none;
-    padding: 10px 5px;
+    padding: 10px 10px;
 
 }
 nav a:hover{
-    background-color: rgb(219, 168, 228);
+    background-color: rgb(238, 103, 103);
 }
 section{
-    display: flex;
-    flex-flow: row wrap;
+    margin: 2rem;
 }
 article{
-    flex: 1 1 15%;
+    display: grid;
+    column-gap: 0.5rem;
+    row-gap: 1.5rem;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: flex-start;
 }
 /*media queries (responsive desing)*/
 @media screen and (min-width:780px) and (max-width:1024px) {
@@ -80,7 +87,7 @@ article{
         height: 80px;
     }
     .contenido{
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(243, 239, 239);
     }
     .contenido_lateral{
         width: 100%;
