@@ -33,17 +33,19 @@ div,nav a{
 h1, div, nav{
     display: inline-block;
 }
-div{ 
-    color: rgb(68, 245, 45);
-    font-size: 1.5rem
+.caja{
+    background-color: black;
+    padding: 0.8rem 1.2rem;
+    color: #f6f8f8;
+    border-radius: 3rem;
 }
 div input{
     border-radius: 3rem;
     background-color: #ddd;
     color: rgb(53, 7, 112); 
-    width: 55rem;   
+    width: 50rem;   
     text-align:start;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 nav{
     align-items: center;
