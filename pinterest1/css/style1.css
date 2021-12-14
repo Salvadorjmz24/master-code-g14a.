@@ -5,7 +5,7 @@ body{
 }
 header{
     align-items: center;
-    background-color: rgb(235, 208, 208);
+    background-color: rgb(245, 245, 245);
     display: flex;
     justify-content:space-between;
     padding: 0 5px;
@@ -21,10 +21,10 @@ h1,a{
     padding: 10px 10px;
 }
 h1 a:hover{
-    background-color: rgb(238, 103, 103);
+    background-color: #ddd;
 }
 h1 a:nth-child(1){
-    color: #fd2b2b;
+    color: rgb(212, 8, 8);
     font-size: 2rem;
 }
 div,nav a{
@@ -34,11 +34,16 @@ h1, div, nav{
     display: inline-block;
 }
 div{ 
-    color: rgb(48, 226, 3);
+    color: rgb(68, 245, 45);
     font-size: 1.5rem
 }
 div input{
-    color: rgb(53, 7, 112);
+    border-radius: 3rem;
+    background-color: #ddd;
+    color: rgb(53, 7, 112); 
+    width: 55rem;   
+    text-align:start;
+    font-size: 2rem;
 }
 nav{
     align-items: center;
@@ -53,7 +58,7 @@ nav a{
 
 }
 nav a:hover{
-    background-color: rgb(238, 103, 103);
+    background-color: #ddd;
 }
 section{
     margin: 2rem;
@@ -65,8 +70,11 @@ article{
     grid-template-columns: auto auto auto auto auto;
     align-items: flex-start;
 }
+img{
+    border-radius: 1rem;
+}
 /*media queries (responsive desing)*/
-@media screen and (min-width:780px) and (max-width:1024px) {
+@media screen and (min-width:800px) and (max-width:1200px) {
     .encabezado{
         background-color: rgb(247, 131, 22);
     } 
@@ -74,7 +82,7 @@ article{
         width: 50%;
     }
 }
-@media screen and (min-width:360px) and (max-width:780px) {
+@media screen and (min-width:400px) and (max-width:800px) {
     .encabezado{
         background-color: rgb(60, 185, 185);
     } 
@@ -82,7 +90,7 @@ article{
         width: 100%;
     }
 }
-@media screen and (min-width:360px){
+@media screen and (min-width:400px){
     .encabezado{
         height: 80px;
     }

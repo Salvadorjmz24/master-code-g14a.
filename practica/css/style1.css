@@ -18,7 +18,7 @@ h1,nav a{
     color: #ffffff;
 }
 h1{ 
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin: 0; 
 }
 nav{
@@ -28,7 +28,7 @@ nav{
     width: 20%;
 }
 nav a{
-    font-size: 0.6rem;
+    font-size: 2rem;
     text-decoration: none;
     padding: 10px 5px;
 
@@ -50,7 +50,7 @@ aside{
 aside a{
     color: #ffffff;
     font-style: oblique;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     padding: 5px 0;
     text-align: center;
     text-decoration: none;
@@ -84,7 +84,7 @@ footer{
 p,footer a{
         color: #ffffff;
         font-style: oblique;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 p{
         display: inline;

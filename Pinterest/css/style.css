@@ -32,9 +32,15 @@ h1, div, nav{
 div{ 
     color: rgb(48, 226, 3);
     font-size: 1.5rem
+    
 }
 div input{
-    color: rgb(53, 7, 112);
+    border-radius: 3rem;
+    background-color: #ddd;
+    color: rgb(53, 7, 112); 
+    width: 61rem;   
+    text-align:start;
+    font-size: 2rem;
 }
 nav{
     align-items: center;
