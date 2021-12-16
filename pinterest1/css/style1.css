@@ -5,7 +5,7 @@ body{
 }
 header{
     align-items: center;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(#efefee);
     display: flex;
     justify-content:space-between;
     padding: 0 5px;
@@ -22,7 +22,7 @@ h1,a{
     padding: 15px 10px;
 }
 h1 a:hover{
-    background-color: #ddd;
+    background-color: #e2e2e2;
 }
 h1 a:nth-child(1){
     color: rgb(212, 8, 8);
@@ -42,12 +42,12 @@ h1, div, nav{
 }
 div input{
     border-radius: 3rem;
-    background-color: #ddd; 
+    background-color: #efefee; 
     width: 58rem;   
     text-align:start;
     font-family:Arial, Helvetica, sans-serif;
     color: black;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     padding: 0 2.1rem;
 }
 .container div{
@@ -80,8 +80,22 @@ article{
     grid-template-columns: auto auto auto auto auto;
     align-items: flex-start;
 }
+article a{
+    position: relative;
+    left: -250px;
+    color: aqua;
+    border-radius: 3rem;
+}
 img{
     border-radius: 1rem;
+}
+footer{
+    text-align: center;
+}
+footer a{
+    text-decoration:none;
+    font-size: 11px;
+    padding: 15px 10px;
 }
 /*media queries (responsive desing)*/
 @media screen and (min-width:800px) and (max-width:1200px) {
