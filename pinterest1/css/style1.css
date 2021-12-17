@@ -1,14 +1,18 @@
 body{
-    font-size: 18px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
 }
 header{
     align-items: center;
     background-color: rgb(#efefee);
     display: flex;
     justify-content:space-between;
-    padding: 0 5px;
+    padding: 0 0.31em;
+    max-width: 98vw;
+    line-height: 9vh;
+    flex-wrap: wrap;
 }
 h1{
     margin: 0;
@@ -18,7 +22,7 @@ h1,a{
     color: rgb(48, 39, 39);
     text-decoration: none;
     font-size: 1.3rem;
-    border-radius: 6rem;
+    border-radius: 6em;
     padding: 15px 10px;
 }
 h1 a:hover{
@@ -26,7 +30,7 @@ h1 a:hover{
 }
 h1 a:nth-child(1){
     color: rgb(212, 8, 8);
-    font-size: 2rem;
+    font-size: 2em;
 }
 div,nav a{
     color: rgb(48, 39, 39);
@@ -36,14 +40,14 @@ h1, div, nav{
 }
 .caja{
     background-color: black;
-    padding: 0.8rem 1.2rem;
+    padding: 0.75em 0.875em;
     color: #f6f8f8;
     border-radius: 3rem;
 }
 div input{
-    border-radius: 3rem;
+    border-radius: 3em;
     background-color: #efefee; 
-    width: 58rem;   
+    width: 50rem;   
     text-align:start;
     font-family:Arial, Helvetica, sans-serif;
     color: black;
@@ -52,7 +56,7 @@ div input{
 }
 .container div{
     position: relative;
-    left: -990px;
+    left: -863px;
 
 }
 nav{
@@ -75,53 +79,38 @@ section{
 }
 article{
     display: grid;
-    column-gap: 0.5rem;
-    row-gap: 1.5rem;
+    column-gap: 0.187em;
+    row-gap: 0.625em;
     grid-template-columns: auto auto auto auto auto;
-    align-items: flex-start;
-}
-article a{
-    position: relative;
-    left: -250px;
-    color: aqua;
-    border-radius: 3rem;
+    grid-auto-rows: -50px;
 }
 img{
-    border-radius: 1rem;
+    max-width: 100%;
+    border-radius: 1.5rem;
 }
 footer{
     text-align: center;
+    width: 100vw;
+    height: 9vh;
+    flex-wrap: wrap;
 }
 footer a{
     text-decoration:none;
     font-size: 11px;
     padding: 15px 10px;
 }
-/*media queries (responsive desing)*/
-@media screen and (min-width:800px) and (max-width:1200px) {
-    .encabezado{
-        background-color: rgb(247, 131, 22);
-    } 
-    .contenido, .contenido_lateral{
-        width: 50%;
+footer a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+@media screen and (min-width:768px) and (max-width:1600px) {
+    .gallery{
+        grid-template-columns: auto auto auto auto auto;
     }
 }
-@media screen and (min-width:400px) and (max-width:800px) {
-    .encabezado{
-        background-color: rgb(60, 185, 185);
-    } 
-    .contenido, .contenido_lateral{
-        width: 100%;
-    }
-}
-@media screen and (min-width:400px){
-    .encabezado{
-        height: 80px;
-    }
-    .contenido{
-        background-color: rgb(243, 239, 239);
-    }
-    .contenido_lateral{
-        width: 100%;
+@media screen and (min-width:360px) and (max-width:768px) {
+    .gallery{
+        grid-template-columns: auto auto auto auto auto;
     }
 }
