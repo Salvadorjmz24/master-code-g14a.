@@ -1,95 +1,116 @@
 body{
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background: url(Going-Merry-Thousand-Sunny.jpg);
+    background-size: 50%;
 }
 header{
     align-items: center;
-    background-color: rgba(40, 11, 201, 0.945);
+    background-color: rgb(#020202);
     display: flex;
-    height: 10vh;
-    justify-content: space-between;
-    padding: 0 5px;
+    justify-content:space-between;
+    padding: 0 0.31em;
+    max-width: 98vw;
+    line-height: 9vh;
+    flex-wrap: wrap;
 }
-h1,nav{
-    display: inline-block;
-}
-h1,nav a{
-    color: #ffffff;
-}
-h1{ 
-    font-size: 2rem;
-    margin: 0; 
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 20%;
-}
-nav a{
-    font-size: 2rem;
-    text-decoration: none;
-    padding: 10px 5px;
-
-}
-nav a:hover{
-    background-color: blue;
-}
-main{
-    display: flex;
-    flex-direction: row;
-}
-aside{
-    align-items: center;
-    background-color: rgba(77, 3, 77, 0.918);
-    display: flex;
-    flex-direction: column;
-    width: 10%;
-}
-aside a{
-    color: #ffffff;
-    font-style: oblique;
-    font-size: 1.5rem;
-    padding: 5px 0;
-    text-align: center;
-    text-decoration: none;
-    width: 100% ;}
-aside a:hover{
-        background-color: rgb(11, 118, 189);
-    }
-section{
-        background-color: rgb(0, 0, 0);
+    .container{
+        margin: 0;
+        background: #ffffff;
+        height: 30px;
+        border-radius: 30px;
+        padding: 10px 20px;
         display: flex;
-        flex-flow: row wrap;
-        width: 90%;
+        align-items: center;
+        transition: 0.8;
+        box-shadow: 0 0 25px 0;
     }
-article{
-        flex: 1 1 30%;
-        text-align: center;
-    }
-img{
-        height: 100px;
+    .container:hover input{
+        width: 31em;}
+
+    .container input{
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 0px;
+        font-size: 16px;
+        transition: 0.8s;
     
     }
+.titulo{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1.8rem;
+        padding:15px 10px;
+
+    }
+.busqueda{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-decoration: solid;
+        font-size: 1.8rem;
+        padding: 15px 10px;
+    }
+nav, .busqueda:hover{
+    text-decoration: underline;
+    color: rgb(243, 110, 1);
+}
+h1, div, nav{
+            display: inline-block;}
+img{
+        height: 150px;
+        max-width: 100%;
+        border-radius: 1.5rem;
+}
+section{
+    display: grid;
+    column-gap: 40px;
+    row-gap: 60px;
+    grid-template-columns: auto auto auto auto auto ;
+    grid-auto-rows: -50px;
+    padding: 40px;
+}
 footer{
-        align-items: center;
-        background-color: rgb(17, 7, 160);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: 10vh;
+    text-align: center;
+    width: 100vw;
+    height: 9vh;
+    flex-wrap: wrap;
+}
+footer p{
+    font-size: 2rem;
+}
+footer a{
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    font-size: 1.5rem;
+    padding: 15px 10px;
+}
+footer a:hover{
+    color: rgb(243, 110, 1);
+    text-decoration: underline;
+}
+@media screen and (min-width:780px) and (max-width:1024px){
+    .titulo, .container, .botones, .cotenidos, .galery, .pie-pagina{
+        width: 100%;}
+
+    .galery{grid-column-end: auto auto auto auto auto;}
+
+}
+@media screen and (min-width:360px) and (max-width:780px){
+    .titulo, .container, .botones, .cotenidos, .galery, .pie-pagina{
         width: 100%;
     }
-p,footer a{
-        color: #ffffff;
-        font-style: oblique;
-        font-size: 1.2rem;
+    .galery{
+        grid-template-columns: auto auto auto auto auto ;
+        width: 100%;
     }
-p{
-        display: inline;
-        margin: 0;
+
+}
+@media screen and (min-width:360px){
+    .galery{
+        grid-template-columns: auto auto auto auto auto;
+        width: 100%;
     }
-.marginIzq{
-        margin-left: 5px;    
-    }
+    .titulo, .container, .botones, .cotenidos, .galery, .pie-pagina{
+}
+
+
