@@ -1,14 +1,16 @@
 //datos de entrada que necesito //
-var nombre;
+var nombre, apellido, añoNacimimiento, añoActual;
+/*var nombre;
 var apellido;
 var añoNacimiento;
-var añoActual;
-nombre=prompt("ingresa tu nombre");
-apellido=prompt("ingresa tu apellido");
-añoNacimiento=prompt("ingresa  tu año de nacimiento");
-añoActual=prompt("in gresa tu año actual");
-
+var añoActual;*/
+nombre = prompt('Ingresa tu nombre');
+apellido = prompt('Ingresa tu apellido');
+añoNacimiento = Number(prompt('Ingresa  tu año de nacimiento'));
+añoActual = Number(prompt( 'Igresa tu año actual'));
 // que tengo que hacer con esos datos //
 edad = añoActual - añoNacimiento;
-// como y que tengo que mostrar al usuario //
-document.write("hola + nombre + apellido + tu edad es;)
+mitad = añoNacimiento / añoActual;
+
+// como y que tengo que mostrar al usuario//
+document.write('Hola ' + nombre + ' ' + apellido + ', Tu Edad Es: ' + edad + ' la division arroja: ' + mitad);
