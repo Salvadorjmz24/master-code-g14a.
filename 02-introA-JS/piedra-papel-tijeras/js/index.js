@@ -13,17 +13,55 @@ opcionUsuario = prompt('QUE ELIGUES? \npiedra: 0\npapel: 1\ntijera:2', );
 //salida de datos //
 alert('computadora eligio ' + opciones[opcionComputadora]);
 
-if(opcionUsuario == 0) //condicion//
+if(opcionUsuario == piedra) //condicion//
 {
     alert('elegiste piedra');
+    if(opcionComputadora == piedra)
+    {
+        alert('empate');
+    }
+    else if(opcionComputadora == papel)
+    {
+        alert('perdiste');
+    }
+    else if (opcionComputadora == tijera);
+    {
+        alert('ganaste');
+    }
+    
 }
-else if(opcionUsuario == 1) //condicion//
+else if(opcionUsuario == papel) //condicion//
 {
     alert('elegiste papel');
+    if(opcionComputadora == piedra)
+    {
+        alert('ganaste');
+    }
+    else if(opcionComputadora == papel)
+    {
+        alert('empate');
+    }
+    else if (opcionComputadora == tijera);
+    {
+        alert('perdiste');
+    }
+
 }
-else if(opcionUsuario == 2) //condicion//
+else if(opcionUsuario == tijera) //condicion//
 {
     alert('elegiste tijera');
+    if(opcionComputadora == piedra)
+    {
+        alert('perdiste');
+    }
+    else if(opcionComputadora == papel)
+    {
+        alert('ganaste');
+    }
+    else if (opcionComputadora == tijera);
+    {
+        alert('empate');
+    }
 }
 else 
 {
